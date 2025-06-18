@@ -3,13 +3,13 @@ body {
 }
 
 .hero-block {
+    position: relative;
     display: flex;
     flex-direction: column;
-    height: 800px;
 }
 
 .hero-block img {
-    position: relative;
+    height: inherit;
 }
 
 .navbar {
@@ -81,8 +81,7 @@ img.mainLogo {
 }
 
 .intro h3 {
-    position: relative;
-    top: 10px;
+    margin-top: 20px;
     font-weight: 400;
     width: 600px;
 }
@@ -90,8 +89,7 @@ img.mainLogo {
 .main-buttons {
     display: flex;
     flex-direction: row;
-    position: relative;
-    top: 30px;
+    margin-top: 30px;
 }
 
 .button {
@@ -110,6 +108,84 @@ img.mainLogo {
     margin-right: 5px;
 }
 
-.main-buttons :last-child {
+.main-buttons :last-child, .match-info .button {
     background-color: #04BF55;
+}
+
+.match-info {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #181D23;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.matchup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    margin-right: 50px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-logo {
+    width: 80px;
+    border-radius: 50px;
+}
+
+.match-info h5 {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.matchup h4 {
+    margin: 0px;
+}
+
+.tournament h3 {
+    margin-top: 0px;
+    color: #65686D;
+}
+
+.time-info {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+}
+
+.time h2 {
+    margin: 0px 0px 40px;
+    font-size: 40px;
+}
+
+.separator {
+    background-color: white;
+    height: 110px;
+    width: 1px;
+    margin-left: 40px;
+    margin-right: 15px;
+    opacity: 10%;
+}
+
+.match-info .button {
+    padding: 20px 60px;
 }
