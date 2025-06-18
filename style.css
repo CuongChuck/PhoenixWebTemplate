@@ -8,10 +8,6 @@ body {
     flex-direction: column;
 }
 
-.hero-block img {
-    height: inherit;
-}
-
 .navbar {
     display: flex;
     flex-direction: row;
