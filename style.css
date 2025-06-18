@@ -5,14 +5,18 @@ body {
 .hero-block {
     display: flex;
     flex-direction: column;
-    background-image: url(mu.jpg);
     height: 800px;
+}
+
+.hero-block img {
+    position: relative;
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: absolute;
     color: white;
 }
 
@@ -28,11 +32,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 }
 
 .tab:hover {
-    cursor: pointer;
     background-color: #161B21;
+    border-radius: 3px;
     transition-duration: 0.5s;
 }
 
@@ -54,8 +59,57 @@ body {
     position: relative;
     left: 5px;
     font-size: larger;
+    font-weight: 900;
 }
 
 img.mainLogo {
     height: 50%;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    color: white;
+}
+
+.intro h1 {
+    font-size: 60px;
+    margin: 0px;
+}
+
+.intro h3 {
+    position: relative;
+    top: 10px;
+    font-weight: 400;
+    width: 600px;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 30px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 3px;
+}
+
+.button:hover {
+    opacity: 90%;
+    transition-duration: 0.5s;
+} 
+
+.main-buttons :first-child {
+    background-color: #227CF2;
+    margin-right: 5px;
+}
+
+.main-buttons :last-child {
+    background-color: #04BF55;
 }
